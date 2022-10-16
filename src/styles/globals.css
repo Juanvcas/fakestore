@@ -1,3 +1,11 @@
+:root {
+   --black: #323031;
+   --darkBlue: #14213d;
+   --lightOrange: #fca311;
+   --lightGray: #e5e5e5;
+   --white: #ffffff;
+}
+
 * {
    box-sizing: border-box;
    margin: 0;
@@ -6,4 +14,14 @@
 
 html {
    font-size: 62.5%;
+   font-family: 'Open Sans', sans-serif;
+}
+
+body {
+   font-size: 1.6rem;
+}
+
+img {
+   width: 100%;
+   max-width: 100vw;
 }
