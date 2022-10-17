@@ -1,3 +1,4 @@
+import FloatFooter from '@components/FloatFooter';
 import CategoryMenu from '@common/CategoryMenu';
 import Head from 'next/head';
 import { MdFilterAlt } from 'react-icons/md';
@@ -19,10 +20,11 @@ export default function Home() {
             </section>
             <section className={s['product-list']}>
                <div className={s['products-cont']}>
-                  <MainProductList offset={5} limit={10} classes={s.products} />
+                  <MainProductList offset={5} limit={20} classes={s} />
                </div>
             </section>
          </main>
+         <FloatFooter />
       </>
    );
 }

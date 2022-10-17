@@ -9,6 +9,7 @@ const endpoints = {
    categories: {
       getAllCategories: `${API}/api/${version}/categories`,
       getCastegory: (id) => `${API}/api/${version}/categories/${id}`,
+      getCategoryProducts: (id) => `${API}/api/${version}/categories/${id}/products`,
    },
 };
 

@@ -11,4 +11,14 @@ const getAllCategories = () => {
    return list;
 };
 
-export { getAllCategories };
+const getCategoryProducts = (id = 0) => {
+   const [list, setList] = useState([]);
+   useEffect(() => {
+      fetch(endpoints.products.getCategoryProducts(id))
+         .then((res) => res.json())
+         .then((json) => setList(json));
+   }, []);
+   return list;
+};
+
+export { getAllCategories, getCategoryProducts };

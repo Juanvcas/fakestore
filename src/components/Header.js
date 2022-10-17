@@ -11,14 +11,14 @@ const Header = () => {
       setMenu(!menu);
    };
    useEffect(() => {
-      if (window.innerWidth <= 768) {
+      if (window.innerWidth < 768) {
          setMenu(false);
       } else {
          setMenu(true);
          setMenuLogo(false);
       }
       window.addEventListener('resize', () => {
-         if (window.innerWidth <= 768) {
+         if (window.innerWidth < 768) {
             setMenu(false);
             setMenuLogo(true);
          } else {
